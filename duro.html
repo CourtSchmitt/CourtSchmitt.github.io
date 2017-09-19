@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Courtney Schmitt: Duro Internship</title>
+<style>
+body, html {
+    height: 100%;
+   	background-image: url('http://www.ceswa.com.au/blueprint-bg.jpg');
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#auv {
+	width: 270px;
+	height: 500px;
+}
+
+#CV, #thrust {
+	width: 270px;
+	height: 225px;
+}
+
+h1 {
+	color: #27223E;
+}
+
+p {
+	font-size: 20px;
+	color: #27223E;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Duro UAS</h1>
+
+<p>During the summer of 2017 I had the opportunity to work at an advanced manufacturing startup in New York City that specialized in Autonomous Underwater Vehicles (AUVs). I assisted the mechanical and electrical teams with the design and construction of the Harbor AUV (leftmost pictured). It was a great environment for a first job. I had a lot of mentorship and was able to ask a lot of questions but also was given a lot of responsibility and creative authority on the parts of their Harbor AUV that I designed to make important decisions about various aspects of its design. The biggest contribution I made was the design of the computer pressure vessel which is the top right. 
+            <br>
+            <br>
+             There were  several considerations I had to account for when designing this part. For starters, I was limited in the size of the vessel since the length and diameter of the hull of the vehicle was already specified. I debated using an array of smaller vessels and wiring them all together before deciding on one large radius and long vessel which was both easier to assemble and after performing calculations, was determine to be more space efficient.   </p>
+
+    
+        <div id = "duroPics" style="float: left; margin-left: 40px;">
+        <table>
+            <tbody>
+            <tr>
+                <td rowspan="2"><image id = auv src ="isometric_auv.png"/></td></td>
+                <td><image id = CV src ="computer_vessel2.png"/></td></td>
+            </tr>
+            <tr>
+                <td><image id = thrust src ="thrust.png"/></td></td>
+            </tr>
+            </tbody>
+        </table>
+            
+        </div>
+
+        <div>
+        <p>I then had to figure out how to maximize the space within the pressure vessel that would contain upwards of 15 electrical components including a carrier board for the onboard computer. I experimented with several geometries of the carrier board including a single board, stacked boards, and finally a cross shaped board that had rubber sided bumpers to allow the boards to easily slide in and out of the vessel and reduce vibrational effects that would otherwise result from contact between aluminum (boards) and acrylic (tube). I stacked a lot of components on smaller aluminum sheets, elevated using standoffs, to save space as well. I used aluminum for all of the pieces in the vessel, including nuts, bolts and standoffs to have a uniform material and decrease the likelihood of galvanic corrosion, which was unlikely in the sealed chamber but was nonetheless a consideration we had to make when designing other parts of the vehicle that did make contact with water. Aluminum also provided decent heat transfer properties and while we were not expecting the vessel to get too hot, we made sure the boards made contact witht the aluminum end caps of the vessel. The large surface area of end caps compared to the boards allowed biased the heat to flow towards the end caps and dissipate externally, acting as a makeshift heat sink.
+        <br>
+        <br>
+        I also designed a mount for the thrusters, pictured on the bottom right that would allow the vehicle to turn and move horizontally and vertically. As a team we decided that 3D printing the part using PLA would be easiest and most cost effective. With this knowledge I modeled the thrust as a beam supported on both ends with a center load. I used stress-strain data for PLA in a simple tension test to see what the deflection would be at a limit we set below its failure point to ensure that the beam would never deflect enough to break in use. Knowing the force exerted when the motor was on, I was able to calcualte the dimensions of the beam through analysis of the moments and stresses exerted at the point of maximum deflection. 
+        <br>
+        <br>
+        Another mini-project I was involved in was helping determine the buoyancy requirements of the AUV. Given the materials and volume occupied by all components of the vehicle, I used SolidWorks to easily calculate the lifting force that we were already getting before any foam had been added to the vehicle. I then calculated the center of mass and center of buoyancy and began to add foam components to my 3D model until the two centers were at the same spot, as to not cause unwanted moments thus reducing the load on the motors to stablize the vehicle, and achieve neutral buoyancy. At the conclusion of my internship, I had also helped write documentation for the team detailing a step-by-step manufacturing procedure and prepared files for any parts that required CNC, laser cutting, or 3D printing. 
+        </p>
+            
+        </div>
+
+</body>
+</html>
