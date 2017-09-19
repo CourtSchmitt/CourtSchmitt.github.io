@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Courtney Schmitt</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+<style>
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    background-image: url('background.png');
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(223,207,186,0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: normal; 
+  color: #27223E;
+  font-size: 20px;
+  position: absolute;
+  width: 100%
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<div style="background-image: url(http://space.airbus.com/wp-content/uploads/2016/08/space-systems-reaching-the-stars-1_1920x800-1440x600.jpg); background-size: cover; color: white;">
+<img id = logo src = "http://www.clker.com/cliparts/s/p/q/2/c/B/simple-gears-md.png">
+<h1> Courtney Schmitt </h1>
+<h3> Mechanical Engineer </h3>
+<ul id = menu>
+  <li><a href="#about">About Me</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+<br>
+<br>
+</div>
+
+<div class="parallax"> 
+<div id = introduction style="margin-bottom: 150px;">
+<a id="about">
+    <div id = left style="display: inline-block; width: 48%; margin-left: 50px;" >
+        <h1 style="margin-bottom: 5px;">Courtney Schmitt</h1>
+        <div style="width: 100px; margin-top: 0px;margin-left: 200px;border-top: 2px #27223E solid;"></div>
+        <p style="margin-top: 5px;"> Hi! My name is Courtney Schmitt and I am a senior at Johns Hopkins University. In May 2018 I will be graduating with a Bachelor of Science in Mechanical Engineering and in 2019 I will be recieving my Masters of Science in Robotics. I've spent my undergrad concentrating in Aerospace and will focus on the Perception and Cognition track for graduate school, taking classes related to AI, Machine Learning, and Computer Vision. I want to explore the ways in which these two fields overlap in application. I love to learn and explore new things, which is why I like to always be kept busy with a new project and beyond of academics I enjoy being outside, skiing or hiking, playing with my dogs, listening to music on my record player and playing volleyball. </p>
+
+    </div>
+
+    <div id = right style="float:right; margin-right: 200px; margin-top: 50px;">
+        <image id = profilePic src ="profile.png"/>
+    </div>
+    </a>
+</div>
+</div>
+
+
+<div style="height:300px;background-color:rgba(223,207,186,1);color: #27223E;">
+<a id = "skills">
+    <h1 style="margin-top:0px;margin-bottom: 5px;"> Skills </h1>
+    <div style="height: 150px; margin-top: 50px;">
+     <table id = skillTable style="width: 100%; text-align: center;">
+        <tr>
+            <th>3D Modeling</th>
+            <th>Computational Analysis</th>
+            <th>Programming Knowledge</th>
+            <th>Manufacturing</th>
+        </tr>
+
+        <tr>
+            <td>Creo</td>
+            <td>Digital Image Correlation</td>
+            <td>Matlab</td>
+            <td>Soldering</td>
+        </tr>
+
+        <tr>
+            <td>Solidworks</td>
+            <td>Particle Image Velocimetry</td>
+            <td>Unix</td>
+            <td>Mill/Lathe</td>
+        </tr>
+
+        <tr>
+            <td>CAM/CNC</td>
+            <td>Finite Element Analysis</td>
+            <td>Java</td>
+            <td>Rapid Prototyping</td>
+        </tr>
+
+        <tr>
+            <td>G Code</td>
+            <td>COMSOL Thermal Analysis</td>
+            <td>Python</td>
+            <td>Sand Casting</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td>HTML/CSS</td>
+            <td>Laser Cutting</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Welding</td>
+        </tr>
+    </table>
+
+        
+
+</a>
+</div> 
+
+<div class="parallax">
+<a id = "projects">
+    <h1>Projects and Work Experience</h1>
+
+    <table id = projectTable style="margin-top: 300px;">
+        <tr>
+            <td style="width:250px; height: 250px;"> <div class="container">
+    <img src="duro.png" alt="AUV" style="width: 250px; height: 250px;">
+  <div class="overlay">
+    <div class="text"><a href="Duro.html" style="color: #27223E; text-decoration: none;">Intern at Duro UAS from June to August 2017. <br><br><br>Read More</a></div>
+  </div>
+</div></td>  
+            <td style="width:250px; height: 250px;"></td>    
+            <td style="width:250px; height: 250px;"><div class="container">
+  <img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/p/2/005/0b0/0d4/18aee64.jpg" alt="Research" class="image" style="width: 250px; height: 250px;">
+  <div class="overlay">
+    <div class="text"><a href="research.html" style="color: #27223E; text-decoration: none;">Researched during the Summer of 2015 and 2016. <br><br><br>Read More</div>
+  </div>
+</div></td>  
+        <td style="width:250px; height: 250px;"></td>  
+        <td style="width:250px; height: 250px;"><div class="container" >
+  <img src="http://www.stsci.edu/~avila/images/st_logo.jpg" alt="Senior Design" class="image" style="width: 250px; height: 250px;">
+  <div class="overlay">
+    <div class="text"><a href="seniordesign.html" style="color: #27223E; text-decoration: none;">Assisted the Space Science Telescope Institute in a year long capstone project. <br><br><br>Read More</div>
+  </div>
+</div></td>
+        </tr>
+
+        <tr>
+            <td style="width:250px; height: 250px;"><div class="container">
+  <img src="website.png" alt="Online Portfolio" class="image" style="width: 250px; height: 250px;">
+  <div class="overlay">
+    <div class="text"><a href="onlinewebsite.html" style="color: #27223E; text-decoration: none;">Self-taught HTML/CSS to create online professional portfolio. <br><br><br>Read More</div>
+  </div>
+
+</div></td>
+            <td style="width:250px; height: 250px;"></td>
+            <td style="width:250px; height: 250px;"><div class="container">
+  <img src="IP.png" alt="Inverted Pendulum" class="image" style="width: 250px; height: 250px;">
+  <div class="overlay">
+    <div class="text"><a href="pendulum.html" style="color: #27223E; text-decoration: none;">Performed PID control to regulate an inverted pendulum. <br><br><br>Read More</div>
+  </div>
+</div></td>
+
+        <td style="width:250px; height: 250px;"></td>
+            <td style="width:250px; height: 250px;"><div class="container">
+  <img src="crane.png" alt="Crane" class="image" style="width: 250px; height: 250px;">
+  <div class="overlay">
+    <div class="text"><a href="crane.html" style="color: #27223E; text-decoration: none;">Built a crane required to lift 10 lbs in 2 minutes. <br><br><br>Read More</div>
+  </div>
+</div></td>
+        </tr>
+
+    </table>
+</a>
+</div>
+
+<div class = contactInfo style="text-align: center; background-image: url(http://space.airbus.com/wp-content/uploads/2016/08/space-systems-reaching-the-stars-1_1920x800-1440x600.jpg); background-size: cover; color: white;">
+<a id = "contact">
+    <h1> Contact Information </h1>
+    <a href="test_resume.pdf">Resume</a>
+
+    <table id = links style="margin-top: 50px;">
+        <tr>
+            <td><script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+            <a  href = "https://www.linkedin.com/in/courtneymarieschmitt/"
+            target = "_blank">  <img id = iconLinkedIn src = "http://1000logos.net/wp-content/uploads/2017/03/LinkedIn-Logo.png"/></a></td>
+        
+            <td> <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+            <a  href = "mailto: cschmit6@jhu.edu"
+            target = "_blank">  <img id = iconEmail src = "http://www.iconsfind.com/wp-content/uploads/2017/01/20170117_587d98a7d9db8.png"/></a></td>
+
+            <td><script type="text/javascript" src="https://twitter.com/CourtSchmitt" async defer></script>
+            <a  href = "https://twitter.com/CourtSchmitt"
+            target = "_blank">  <img id = iconTwitter src = "http://icons.iconarchive.com/icons/limav/flat-gradient-social/512/Twitter-icon.png"/></a></td>
+
+        </tr>
+
+    </table>
+</a>
+</div>
+
+</body>
+</html>
